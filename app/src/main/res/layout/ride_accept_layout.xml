@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/normal">
+
+
+    <ImageView
+        android:id="@+id/driverImageView"
+        android:layout_width="@dimen/large"
+        android:layout_height="@dimen/large"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/waitDurationTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="2 min"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/driverImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/waitDistanceTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="5km"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/driverImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/riderInfoTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        android:gravity="center"
+        android:text="Picking up James smith"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_font"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/driverImageView" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/borderColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/riderInfoTextView" />
+
+    <ImageView
+        android:id="@+id/acceptedRideNavigateButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_navigate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/navigateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon_size"
+        android:gravity="center"
+        android:text="Navigate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acceptedRideNavigateButton" />
+
+    <ImageView
+        android:id="@+id/acceptedRideCallButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:src="@drawable/ic_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/acceptedRideNavigateButton"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:text="Call"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/navigateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acceptedRideCallButton" />
+
+    <ImageView
+        android:id="@+id/acceptedRideCancelButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintStart_toEndOf="@+id/acceptedRideNavigateButton"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon_size"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/acceptedRideNavigateButton"
+        app:layout_constraintTop_toBottomOf="@id/acceptedRideCancelButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/acceptedRideArrivedButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/medium"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/arrived"
+        android:textColor="@color/colorWhite"
+        app:cornerRadius="@dimen/normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigateTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

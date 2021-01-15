@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "250575984824",
+    "firebase_url": "https://africar-e4bb2.firebaseio.com",
+    "project_id": "africar-e4bb2",
+    "storage_bucket": "africar-e4bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250575984824:android:43bd5e80bced5b662ffc4d",
+        "android_client_info": {
+          "package_name": "com.mahanthesh.africar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250575984824-6q4sqi0lqscdg6ut6jqdd483aqf15a5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYtumQZOoxye0bnHtmwpNlYbecHVNaGUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250575984824-6q4sqi0lqscdg6ut6jqdd483aqf15a5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

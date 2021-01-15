@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center">
+        </TextView>
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="12"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:hint="Email"
+            android:textSize="15sp"
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/et_newPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="12"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_bg"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:hint="Password">
+        </EditText>
+        <EditText
+            android:id="@+id/et_confirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="12"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_bg"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:hint="New Password">
+        </EditText>
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite"
+            android:text="Signup"
+            android:background="@drawable/btn_bg">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_gravity="center">
+        </ProgressBar>
+    </LinearLayout>
+
+</LinearLayout>

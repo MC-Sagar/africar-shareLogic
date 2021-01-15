@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/normal">
+
+
+    <ImageView
+        android:id="@+id/driverImageView"
+        android:layout_width="@dimen/large"
+        android:layout_height="@dimen/large"
+        android:src="@drawable/ic_car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rideDurationTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="2 min"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/driverImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rideDistanceTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="5km"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/driverImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/riderInfoTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size"
+        android:gravity="center"
+        android:text="Picking up James smith"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/content_font"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/driverImageView" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/borderColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/riderInfoTextView" />
+
+    <ImageView
+        android:id="@+id/rideNavigateButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_navigate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/navigateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon_size"
+        android:gravity="center"
+        android:text="Navigate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_font"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rideNavigateButton" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/medium"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/inProgress"
+        android:textColor="@color/colorWhite"
+        app:cornerRadius="@dimen/normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigateTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

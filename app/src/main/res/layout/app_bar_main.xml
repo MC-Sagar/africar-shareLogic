@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomepageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/statusSwitch"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    app:ss_animationDuration="600"
+                    app:ss_iconPadding="4dp"
+                    app:ss_iconSize="20dp"
+                    app:ss_leftIcon="@drawable/ic_car"
+                    app:ss_leftText="Offline"
+                    app:ss_rightIcon="@drawable/ic_car"
+                    app:ss_rightText="Online"
+                    app:ss_selectedTextSize="11sp"
+                    app:ss_sliderBackgroundColor="@color/light_black"
+                    app:ss_switchColor="@color/colorWhite"
+                    app:ss_textColor="@color/colorWhite"
+                    app:ss_textSize="10sp"
+                    app:ss_animationType="line"/>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

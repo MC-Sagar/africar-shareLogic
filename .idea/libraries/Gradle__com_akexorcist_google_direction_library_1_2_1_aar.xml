@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.akexorcist:google-direction-library:1.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/51340954316a12b63486d7ab20641cd7/jetified-google-direction-library-1.2.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/51340954316a12b63486d7ab20641cd7/jetified-google-direction-library-1.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/51340954316a12b63486d7ab20641cd7/jetified-google-direction-library-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/51340954316a12b63486d7ab20641cd7/jetified-google-direction-library-1.2.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.akexorcist/google-direction-library/1.2.1/8a64c5f7255f46ead56dd343bcec817c91777e2c/google-direction-library-1.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.akexorcist/google-direction-library/1.2.1/e693f96166d7527d60d7aed649ef9edbe7c1c4d8/google-direction-library-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

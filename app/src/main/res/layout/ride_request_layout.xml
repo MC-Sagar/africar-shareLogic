@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/normal"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/acceptRequestButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/medium"
+        android:text="@string/tap_to_accept"
+        android:textColor="@color/colorWhite"
+        app:cornerRadius="@dimen/normal" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pickupRequestImageView"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_pointer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pickupLabel"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Pickup"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/content_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pickupRequestImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pickupRequestTextView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Pickup location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_font"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pickupLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dropRequestImageView"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_pointer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pickupRequestImageView" />
+
+        <TextView
+            android:id="@+id/dropLabel"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Drop"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/content_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dropRequestImageView"
+            app:layout_constraintTop_toBottomOf="@+id/pickupRequestImageView" />
+
+        <TextView
+            android:id="@+id/dropRequestTextView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Drop location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_font"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dropLabel"
+            app:layout_constraintTop_toBottomOf="@+id/pickupRequestImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/borderColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/requestPriceTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="$12.5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/content_font" />
+
+        <TextView
+            android:id="@+id/requestDistanceTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2km"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_font" />
+
+        <TextView
+            android:id="@+id/requestRatingTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3.5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_font"
+            app:drawableStartCompat="@drawable/ic_star"
+            app:drawableTint="@color/black" />
+
+        <TextView
+            android:id="@+id/requestDurationTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="25min"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_font" />
+    </LinearLayout>
+</LinearLayout>
